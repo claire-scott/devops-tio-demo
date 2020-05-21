@@ -19,10 +19,10 @@
         <div class="panel panel-danger">
           <div class="panel-body">
             <table>
-            {{ for k, v in item.items() }}
+            {{ for k in item }}
             <tr>
                 <td>{{ k }}</td>
-                <td>{{ v }}</td>
+                <td>{{ item['k'] }}</td>
             </tr>
             {{ endfor }}
             </table>
