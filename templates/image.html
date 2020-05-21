@@ -18,7 +18,14 @@
       <div class="col-lg-4 col-lg-offset-4">
         <div class="panel panel-danger">
           <div class="panel-body">
-            {{ item }}
+            <table>
+            {{ for k, v in item.items() }}
+            <tr>
+                <td>{{ k }}</td>
+                <td>{{ v }}</td>
+            </tr>
+            {{ endfor }}
+            </table>
           </div>
         </div>
       </div>
